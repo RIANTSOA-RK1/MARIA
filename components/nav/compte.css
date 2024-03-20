@@ -1,0 +1,20 @@
+.btnfermerModal{
+     margin-left:90%;
+     margin-top:-5px;
+}
+.ModalContenu{
+    width:500px;
+	box-shadow:0px 0px 10px rgba(7, 7, 7, 0.387);
+	margin:auto;
+    padding:20px 20px;
+    box-sizing: border-box;
+    border:none;
+    background:white;
+}
+.modalContainer{
+    position:absolute;
+    top:0;
+    left:0;
+    background: rgba(128, 128, 128, 0.771);
+    z-index:1000;
+}

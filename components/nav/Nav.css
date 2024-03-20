@@ -1,0 +1,21 @@
+.ulNav{
+    list-style: none ;
+    gap:20px;
+
+}
+.linkNav{
+    padding:10px 15px;
+    background:rgba(128, 128, 128, 0.185);
+    border-radius:15px;
+    transition:.6s;
+}
+.linkNav:hover{
+    letter-spacing: 1.1px;
+    transition:.6s;
+    background:rgba(128, 128, 128, 0.322);
+}
+.btnMonCompte{
+    margin-top:-15px;
+    height:40px;
+    transition:.6s;
+}

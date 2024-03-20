@@ -1,0 +1,70 @@
+.home{
+  margin-top:100px;
+  gap:150px;
+  width:100%;
+  margin:0px;
+  padding:20px;
+}
+.titreListe{
+ color: rgba(13,202,240,1);
+ margin-top:100px;
+}
+.listePersonnes{
+	
+  text-align: center;
+  padding:20px;
+  height:450px;
+  margin-left:-30px;
+}
+.header .titre{
+   padding: 20px;
+   color:white;
+}
+.liste{
+  padding:20px;
+}
+.countNumber{
+  letter-spacing: 1.8px;
+}
+.btnGrayIndex{
+  background: rgba(128, 128, 128, 0.372);
+}
+.btnwhiteIndex{
+  background: rgba(128, 128, 128, 0.048);
+}
+.loginContenu{
+    width:500px;
+	  box-shadow:0px 0px 10px rgba(7, 7, 7, 0.387);
+	  margin:auto;
+    padding:20px 20px;
+    box-sizing: border-box;
+    border:none;
+}
+.modificationCompte{
+  margin-top:150px;
+}
+.loginContenu h1{
+	color:#1976d2;;
+	margin-top: 10px;
+	font-size:44px;
+
+}
+.Loginforgot{
+  display: flex;
+  justify-content: flex-end;
+  gap:20px;
+}
+.Loginforgot a{
+	text-decoration: none;
+}
+
+@media (max-width:768px) {
+  .loginContenu{
+    width:400px;
+  }
+}
+@media (max-width:500px){
+  .loginContenu{
+    width:350px;
+  }
+}

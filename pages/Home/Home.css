@@ -1,0 +1,13 @@
+.homeContenu{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    margin-top:150px;
+    box-shadow: 0 0 5px 2px rgb(86, 222, 243);
+    background:rgb(86, 222, 243);
+    padding:30px;
+}
+.homeContenu h1{
+    font-size: 50px;
+    margin:30px;
+}
