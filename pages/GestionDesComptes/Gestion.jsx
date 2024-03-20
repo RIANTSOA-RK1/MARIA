@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { fetchUser } from '../../utils/service/ApiUser';
 import Creation from './Creation';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Gestion() {
+    const navigate= useHistory()
     const [userData, setUserData] = useState([]);
 
     useEffect(() => {
@@ -17,6 +19,10 @@ function Gestion() {
 
         fetchData();
     }, []);
+   
+    const Navige=(id)=>{
+          navigate.push(`/profilUser/${id}`)
+    }
 
     return (
         
@@ -38,7 +44,7 @@ function Gestion() {
             </thead>
             <tbody className="bodyListe" >
                 {userData.map((user, index) => (
-                    <tr key={index} className={index%2===0? "btnwhiteIndex":"btnGrayIndex" }>
+                    <tr key={index} className={index%2===0? "btnwhiteIndex":"btnGrayIndex" } onClick={()=>Navige(user.id)}>
                         <td className="liste">{user.name}</td>
                         <td className="liste">{user.first_name}</td>
                         <td className="liste">{user.date_of_birth}</td>
@@ -51,7 +57,7 @@ function Gestion() {
          </div>
         
            
-           <Creation/>
+           <Creation userData={userData} setUserData={setUserData}/>
     
     </div>
 
